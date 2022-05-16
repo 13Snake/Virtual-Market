@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+    padding: 0;
+    background: url(../assets/background_registro.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.form-register{
+    width: 400px;
+    background: linear-gradient(to right, blueviolet, rgb(226, 68, 68));
+    padding: 30px;
+    margin: 0;
+    position: absolute;
+    transform: translate(10%, -5%);
+    margin-top: 100px;
+    border-radius: 80px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-register h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.controls{
+    width: 100%;
+    background: linear-gradient(to right, white,rgb(230, 86, 218));
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+}
+
+::placeholder{
+    color: black;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.form-register a{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.form-register input[type="submit"]{
+    width: 100%;
+    background: rgb(77, 51, 168);
+    outline: none;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.form-register input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.form-register a:hover{
+    color:#000;
+}

@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box   
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/Background-productos.jpg);
+}
+
+.cat h1{
+    padding: 0 0 10px;
+    font-size: 30px;
+    color: white;
+    transform: translate(150%, -300%);
+    align-items: center;
+}
+
+.seccion{
+    display: flexbox;
+    justify-content: center;
+    padding: 4%;
+    transform: translate(0%, 35%);
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 380px;
+    /*background: linear-gradient(rgb(203, 150, 224), rgb(216, 152, 224));*/ /*Cambiar color de la tarjeta donde esta el producto*/
+    background: linear-gradient(to right, blueviolet, rgb(226, 68, 68));
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: 0.5s;
+    border: 5px solid black;
+}
+
+.card:hover{
+    width: 600px;
+}
+
+.card .imgBox{
+    position: relative;
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card:hover .imgBox{
+    transform: rotate(-35deg);
+}
+
+.card .imgBox img{
+    width: 85%;
+}
+
+.card .details{
+    position: relative;
+    min-width: 300px;
+    background: rgb(83, 81, 81); /*Cambiar color segunda tarjeta*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: white;
+}
+
+.card .details::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid white; /*Color del triangulito*/
+}
+
+.card .details title{
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+.card .details h4{
+    font-size: 0.9em;
+}
+
+.card .details .description p{
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+.card .details .buy{
+    display: flex-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .details .buy .price{
+    font-size: 1.6em;
+    padding: 4%;
+}
+
+.card .details .buy .btn{
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+    box-shadow: 3px 6px 20px #000;
+    background: rgb(77, 51, 168); /*Color del boton*/
+    font-size: 18px;
+}
+
+.card .details .buy .btn:hover{
+    cursor: pointer;
+    background: orange;
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.card .details .buy .text_existencias input[type="text"]{
+    width: 79%;
+    background: linear-gradient(to right, blueviolet, rgb(226, 68, 68)); /*Color de la caja de texto*/
+    padding: 1px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: 'calibri';
+    font-size: 15px;
+    color: black;
+}
+
+.card .details .buy .btn a{
+    text-decoration: none;
+    color: black;
+}
